@@ -1,0 +1,122 @@
+/* Page background */
+body{
+    background: whitesmoke;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container */
+.box-container{
+    width: 450px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.box-heading{
+    text-align: center;
+}
+
+.Heading{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input section */
+.input-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-task{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-task:focus{
+    border-color: #667eea;
+}
+
+/* Buttons */
+.btn{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Add button */
+.addbtn{
+    background: #667eea;
+    color: white;
+}
+
+.addbtn:hover{
+    background: #5563d6;
+}
+
+/* Delete button */
+.deletebtn{
+    background: #ff4d4d;
+    color: white;
+    margin-left: 8px;
+}
+
+.deletebtn:hover{
+    background: #e60000;
+}
+
+/* Update button */
+.updatebtn{
+    background: #00b894;
+    color: white;
+    margin-left: 5px;
+}
+
+.updatebtn:hover{
+    background: #009e7f;
+}
+
+/* Task sections */
+.tasklist{
+    margin-top: 20px;
+}
+
+.tasklist h2{
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Task item */
+.tasklist div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f7f7;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+/* Checkbox */
+.checkBox{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Completed task style */
+.complete-task div{
+    background: #e8f8f5;
+    text-decoration: line-through;
+    color: #777;
+}

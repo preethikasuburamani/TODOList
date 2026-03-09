@@ -1,0 +1,122 @@
+/*full body css*/
+body{
+  
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:rgb(241, 246, 246);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+} 
+
+/*box container */
+.box-container{
+    padding:40px;  
+
+    max-width: 1200px;  
+    
+}
+.box-heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.box-heading h1{
+    color: grey;
+    font-weight: bold;
+}
+.input-task{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.input-box{
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(167, 177, 177);
+    border-radius: 1%;
+    padding: 20px;
+
+}
+
+/*button style*/
+
+.btn{
+    padding: 10px;
+    border: none;
+    min-width: 80px;
+    box-shadow: 3px 2px 2px 2px rgb(40, 39, 39);
+    border-radius: 6%;
+    color: white;
+    font-weight: bolder;
+
+}
+.addbtn{
+    background-color: rgb(61, 61, 250);
+}
+
+.deletebtn{
+    background-color: rgb(219, 2, 2);
+    margin: 20px;
+}
+.updatebtn{
+   background-color:gray;
+   margin: 20px;
+}
+
+
+/*pending and completed list of task style*/
+
+.tasklist{
+    border: none;
+    width: 95%;
+    max-width: 1200px;
+    box-shadow: 2px 2px 2px 2px rgb(167, 177, 177);
+    border-radius: 1%;
+    padding: 20px;
+    margin: 10px  auto;
+}
+
+.checkBox{
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .input-task,
+    .tasklist {
+        width: 90%;   
+        padding: 10px; 
+    }
+
+    .btn {
+        padding: 10px 15px; 
+    }
+
+    .box-heading h1 {
+        font-size: 2.5rem; 
+    }
+}
+
+/* Each task row */
+.tasklist > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Left side (checkbox + label) */
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+/* Right side (buttons) */
+.task-actions {
+    display: flex;
+    gap: 8px;
+}

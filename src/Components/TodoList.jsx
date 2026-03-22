@@ -97,7 +97,18 @@ const TodoList = () => {
         <div className="input-box">
             <input  className='input-task'
             type='text' 
-            value={current} onChange={(e)=>setCurrent(e.target.value)}placeholder='Enter your Task'/>
+            value={current}
+            onChange={(e)=>setCurrent(e.target.value)}
+            placeholder='Enter your Task'
+            
+             onKeyDown={(e)=>{
+               if(e.key === "Enter"){
+                    AddTask()           
+                 }}}
+            /> 
+
+           
+
             <button className='btn addbtn'onClick={AddTask} > {updatebtn? "Add Task": "update"} </button>
         </div>
         {/*Pending task*/}

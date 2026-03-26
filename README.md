@@ -1,16 +1,42 @@
-# React + Vite
+# TODO List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean task management web app to keep track of daily activities.
 
-Currently, two official plugins are available:
+## Project Description
+This project allows users to add, manage, and track their daily tasks. It focuses on basic functionality with a clean UI to make task management simple and effective.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Link
+Link: https://todo-list-silk-gamma-62.vercel.app/
 
-## React Compiler
+## Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img width="1708" height="922" alt="Screenshot (371)" src="https://github.com/user-attachments/assets/a26e6443-003f-4765-aba0-18a322d25f21" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+* HTML
+* CSS
+* JavaScript
+
+## Key Features
+====Full CRUD ====
+* Add and delete tasks
+* Mark tasks as completed
+* Simple and user-friendly interface
+* Lightweight and responsive
+
+## Getting Started
+
+1. Clone the repository
+   git clone https://github.com/preethikasuburamani/TODOList.git
+2. Navigate to the folder
+   cd TODOList
+3. Open `index.html` in your browser
+
+## Contact
+GitHub: https://github.com/preethikasuburamani
+LinkedIn: https://www.linkedin.com/in/preethika-subramani/
+---
+
+Simple app to manage daily tasks efficiently.

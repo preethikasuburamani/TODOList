@@ -1,0 +1,168 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.box-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  .box-heading {
+    .Heading {
+      color: black;
+      font-size: 3rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  }
+
+  .input-box {
+    display: flex;
+    background: $glass;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    gap: 15px;
+
+    .input-task {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      outline: none;
+      color: $text-main;
+    }
+
+    .addbtn {
+      @include button-base;
+      background: $primary;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:hover {
+        background: $primary-hover;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+      }
+    }
+  }
+
+  .tasklist {
+    background: $glass;
+    padding: 30px;
+    border-radius: 24px;
+    min-height: 100px;
+    margin: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      color: $text-main;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #f1f5f9;
+      margin-bottom: 25px;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      padding: 18px;
+      background: white;
+      margin-bottom: 12px;
+      border-radius: 16px;
+      border: 1px solid #f1f5f9;
+      transition: all 0.2s ease;
+
+      &:hover {
+        border-color: $primary;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
+
+      .checkBox {
+        width: 22px;
+        height: 22px;
+        margin-right: 15px;
+        cursor: pointer;
+        accent-color: $primary;
+      }
+
+      .deletebtn,
+      .updatebtn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 0.85rem;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        margin-left: 8px;
+        @include button-base;
+      }
+
+      .deletebtn {
+        background: #fef2f2;
+        color: $danger;
+        margin-left: auto;
+
+        &:hover {
+          background: $danger;
+          color: white;
+        }
+      }
+
+      .updatebtn {
+        background: #eef2ff;
+        color: $primary;
+
+        &:hover {
+          background: $primary;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .complete-task {
+    > div {
+      background: #f8fafc;
+    }
+
+    span {
+      text-decoration: line-through;
+      color: $text-muted;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .box-heading .Heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-box {
+    flex-direction: column;
+    border-radius: 15px;
+
+    .addbtn {
+      width: 100%;
+    }
+  }
+}

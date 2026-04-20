@@ -1,5 +1,5 @@
-
-import "./TodoList.css"
+import "../Styles/TodoList.scss"
+//import "./TodoList.css"
 import { useEffect, useState } from 'react'
 
 //localStorage

@@ -9,8 +9,7 @@ This project allows users to add, manage, and track their daily tasks. It focuse
 Link: https://todo-list-silk-gamma-62.vercel.app/
 
 ## Screenshots
-
-<img width="1708" height="922" alt="Screenshot (371)" src="https://github.com/user-attachments/assets/a26e6443-003f-4765-aba0-18a322d25f21" />
+<img width="1920" height="1080" alt="Screenshot (514)" src="https://github.com/user-attachments/assets/2b3d1460-6f12-4260-91b6-121e99df9eb2" />
 
 
 ## Tech Stack
